@@ -1,24 +1,18 @@
 # vanilla-vue
 
-## Project setup
-```
-npm install
-```
+Dockerized default Vue application.
+Chris Groleau 3/14/2021
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Docker version 20.10.2, build 2291f61
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### To run from Docker Hub
 
-### Lints and fixes files
-```
-npm run lint
-```
+docker run -p 8080:8080 cagroleau/vanilla-vue
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### to build and run locally
+
+cd vanilla-vue
+docker build -t vanilla-vue .
+docker run -p 8080:8080 vanilla-vue
+
+#container will serve application to port 8080 on localhost.
