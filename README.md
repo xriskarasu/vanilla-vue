@@ -11,7 +11,7 @@ Docker version 20.10.2, build 2291f61
 docker run -p 8080:8080 cagroleau/vanilla-vue
 ```
 
-### to build and run locally
+### To build and run locally
 ```
 cd vanilla-vue
 docker build -t vanilla-vue .
